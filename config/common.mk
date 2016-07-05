@@ -81,9 +81,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
-# RomStats
+# Viper4Android
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/ResurrectionStats/ResurrectionStats.apk:system/app/ResurrectionStats/ResurrectionStats.apk
+    vendor/cm/prebuilt/common/bin/audio_policy.sh:install/bin/audio_policy.sh \
+    vendor/cm/prebuilt/common/addon.d/91-v4a.sh:system/addon.d/91-v4a.sh \
+    vendor/cm/prebuilt/common/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/cm/prebuilt/common/lib/soundfx/libv4a_fx_ics.so:system/lib/soundfx/libv4a_fx_ics.so \
+    vendor/cm/prebuilt/common/su.d//15v4a.sh:system/su.d/15v4a.sh \
+    vendor/cm/prebuilt/common/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -165,6 +170,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
+	Viper4Android \
     DataUsageProvider
     
 # DU Utils Library
