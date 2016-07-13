@@ -167,7 +167,6 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     ExactCalculator \
     ResurrectionOTA \
-    ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
 	Viper4Android \
